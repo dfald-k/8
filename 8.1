@@ -1,0 +1,9 @@
+def print_squares(n, current=1):
+    square = current**2
+    if square > n:
+        return
+    print(square)
+    print_squares(n, current + 1)
+n = int(input("число n: "))
+print("квадраты чисел не превышающие n:")
+print_squares(n)
