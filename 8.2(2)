@@ -1,0 +1,9 @@
+def find_first_greater(n, num=1):
+    square = num ** 2
+    if square > n:
+        return square
+    else:
+        return find_first_greater(n, num + 1)
+n = int(input("число n: "))
+result = find_first_greater(n)
+print(f"первое число, большее {n} это {result}.")
