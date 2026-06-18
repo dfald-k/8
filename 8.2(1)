@@ -1,0 +1,8 @@
+n = int(input("число n: "))
+num = 1
+while True:
+    square = num ** 2
+    if square > n:
+        print(f"первое число, большее {n} — это {square}")
+        break
+    num += 1
