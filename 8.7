@@ -1,0 +1,8 @@
+a = float(input("число a (1 < a ≤ 1.5): "))
+num = 2
+while True:
+    current_value = 1 + 1/num
+    if current_value < a:
+        print(f"первое число меньше чем {a} это {current_value}.")
+        break
+    num += 1
